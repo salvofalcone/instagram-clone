@@ -45,6 +45,10 @@
   width: 100%;
 }
 
+.PostMain::-webkit-scrollbar {
+  display: none;
+}
+
 .PostMain img {
   object-fit: fill;
   object-position: center;

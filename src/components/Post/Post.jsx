@@ -11,6 +11,12 @@ import {
 import { useState } from "react";
 
 const Post = ({ post }) => {
+  const { isLike } = post;
+  const [like, setLike] = useState(isLike);
+
+  const onHandleLike = () => {
+    setLike(!like);
+  };
 
   return (
     <article className="Post">
@@ -44,8 +50,8 @@ const Post = ({ post }) => {
         <div className="PostActions__left">
           <div
             className="PostActions__left__like"
-            >
-            <LikeIcon  />
+            onClick={() => onHandleLike()}>
+            <LikeIcon fill={like && like ? "#FD1D1D" : "#262626"} />
           </div>
 
           <div className="PostActions__left__comment">

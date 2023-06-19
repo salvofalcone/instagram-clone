@@ -6,13 +6,13 @@ const Stories = ({ user, stories }) => {
   return (
     <div className="Stories">
       <ul className="Stories__List">
-        <li className="Stories__Item">
-          <Story story={user} key={1}/>
+        <li className="Stories__Item" key={99}>
+          <Story story={user} key={99}/>
         </li>
 
         {stories &&
           stories.map((story) => (
-            <li className="Stories__Item">
+            <li className="Stories__Item" key={story.id}>
               <Story story={story} key={story.id} />
             </li>
           ))}
