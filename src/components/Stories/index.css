@@ -2,8 +2,8 @@
   position: relative;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding-top: 12px;
-  /* scroll-snap-type: mandatory; */
+  padding: 12px 0;
+  box-shadow: 0 0.23px 0 #a6a6aa;
 }
 
 .Stories::-webkit-scrollbar {

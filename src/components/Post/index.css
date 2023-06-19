@@ -1,5 +1,6 @@
 .Post {
   position: relative;
+  margin-bottom: 6px;
 }
 
 /* TOP */
@@ -54,7 +55,7 @@
 
 /* ACTIONS */
 .PostActions {
-  padding: 12px;
+  padding: 12px 12px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -63,4 +64,36 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+/* LIKES AND COMMENTS */
+.PostsLC {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.PostsLC__top {
+  display: flex;
+  align-items: center;
+}
+
+.PostsLC__profile {
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  margin-right: 6.5px;
+}
+
+.PostsLC__likes {
+  font-size: 13px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.PostsLC__description {
+  font-size: 14px;
 }

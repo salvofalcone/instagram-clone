@@ -34,15 +34,18 @@ export const postsData = [
         userId: 222999,
         userName: "josua_l",
         content: "Il nostro commento",
+        userImage: "https://randomuser.me/api/portraits/men/13.jpg",
       },
     ],
     likes: {
-      numberOfLikes: 44686,
+      numberOfLikes: 44.686,
       featuredLike: {
         userId: 2929292,
-        username: "craig_love",
+        username: "pippo_32",
       },
     },
+    description:
+      "Lorem ipsum questa è una descrizione che non ha assolutamente senso ma deve essere abbastanza lunga da andare a capo",
   },
   {
     id: 2,
@@ -57,22 +60,40 @@ export const postsData = [
         type: "image",
         src: "https://loremflickr.com/500/300?random=6",
       },
+      {
+        id: "media11",
+        type: "image",
+        src: "https://loremflickr.com/500/300?random=20",
+      },
+      {
+        id: "media88",
+        type: "image",
+        src: "https://loremflickr.com/500/300?random=21",
+      },
+      {
+        id: "media9987",
+        type: "image",
+        src: "https://loremflickr.com/500/300?random=23",
+      },
     ],
     comments: [
       {
         id: "comm393939393",
-        userId: 222999,
+        userId: 229,
         userName: "josua_l",
-        content: "Il nostro commento",
+        content: "Commento diverso",
+        userImage: "https://randomuser.me/api/portraits/men/11.jpg",
       },
     ],
     likes: {
-      numberOfLikes: 44686,
+      numberOfLikes: 32.491,
       featuredLike: {
-        userId: 2929292,
-        username: "craig_love",
+        userId: 12,
+        username: "ducky",
       },
     },
+    description:
+      "Lorem ipsum questa è una descrizione che non ha assolutamente senso ma deve essere abbastanza lunga da andare a capo",
   },
   {
     id: 3,
@@ -87,22 +108,30 @@ export const postsData = [
         type: "image",
         src: "https://loremflickr.com/500/300?random=8",
       },
+      {
+        id: "media221",
+        type: "image",
+        src: "https://loremflickr.com/500/300?random=22",
+      },
     ],
     comments: [
       {
         id: "comm3939a39393",
-        userId: 222999,
-        userName: "paperino",
-        content: "Il nostro commento",
+        userId: 12,
+        userName: "cat__tully68",
+        content: "L'inverno sta arrivando!",
+        userImage: "https://randomuser.me/api/portraits/women/12.jpg",
       },
     ],
     likes: {
-      numberOfLikes: 44686,
+      numberOfLikes: 1.235,
       featuredLike: {
-        userId: 2929292,
-        username: "craig_love",
+        userId: 12,
+        username: "cat__tully68",
       },
     },
+    description:
+      "Lorem ipsum questa è una descrizione che non ha assolutamente senso ma deve essere abbastanza lunga da andare a capo",
   },
   {
     id: 4,
@@ -126,17 +155,20 @@ export const postsData = [
     comments: [
       {
         id: "comm393939393",
-        userId: 222999,
-        userName: "josua_l",
-        content: "Il nostro commento",
+        userId: 299,
+        userName: "dr__strange",
+        content: "Multiverse?",
+        userImage: "https://randomuser.me/api/portraits/women/11.jpg",
       },
     ],
     likes: {
-      numberOfLikes: 44686,
+      numberOfLikes: 9.843,
       featuredLike: {
-        userId: 2929292,
-        username: "craig_love",
+        userId: 9292,
+        username: "marvel",
       },
     },
+    description:
+      "Lorem ipsum questa è una descrizione che non ha assolutamente senso ma deve essere abbastanza lunga da andare a capo",
   },
 ];

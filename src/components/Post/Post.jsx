@@ -1,8 +1,17 @@
 import "./index.css";
 
-import { DotsIcon, LikeIcon, CommentIcon, SendIcon, BookMarkIcon } from "../../icons";
+import {
+  DotsIcon,
+  LikeIcon,
+  CommentIcon,
+  SendIcon,
+  BookMarkIcon,
+} from "../../icons";
+
+import { useState } from "react";
 
 const Post = ({ post }) => {
+
   return (
     <article className="Post">
       {/* Top post */}
@@ -30,16 +39,49 @@ const Post = ({ post }) => {
         ))}
       </div>
 
-      {/* like + actions + commenti */}
+      {/* actions */}
       <div className="PostActions">
         <div className="PostActions__left">
-          <LikeIcon />
-          <CommentIcon />
-          <SendIcon />
+          <div
+            className="PostActions__left__like"
+            >
+            <LikeIcon  />
+          </div>
+
+          <div className="PostActions__left__comment">
+            <CommentIcon />
+          </div>
+
+          <div className="PostActions__left__send">
+            <SendIcon />
+          </div>
         </div>
 
         <div className="PostActions__right">
           <BookMarkIcon />
+        </div>
+      </div>
+
+      {/* likes and comments */}
+      <div className="PostsLC">
+        <div className="PostsLC__top">
+          <img
+            src={post.comments[0].userImage}
+            alt="user profile image"
+            className="PostsLC__profile"
+          />
+          <p className="PostsLC__likes">
+            Liked by{" "}
+            <span className="bold">{post.likes.featuredLike.username}</span> and{" "}
+            <span className="bold">{post.likes.numberOfLikes}</span> others
+          </p>
+        </div>
+
+        <div className="PostsLC__bottom">
+          <p className="PostsLC__description">
+            <span className="bold">{post.userName}</span>{" "}
+            <span>{post.description}</span>
+          </p>
         </div>
       </div>
     </article>

@@ -19,6 +19,7 @@
   padding: 2px;
   margin-bottom: 6px;
   border-radius: 50%;
+  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); */
 }
 
 .Story__Image::before {
@@ -34,8 +35,8 @@
   top: -2px;
   right: -2px;
   bottom: -2px;
-  z-index: -1;
   left: -2px;
+  z-index: -1;
 }
 
 .Story__Image::after {
@@ -91,4 +92,3 @@
   font-size: 12px;
   text-align: center;
 }
-
