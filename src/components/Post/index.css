@@ -1,0 +1,66 @@
+.Post {
+  position: relative;
+}
+
+/* TOP */
+.PostInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+}
+
+.PostInfo__Image img {
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
+
+.PostInfo__Username {
+  font-weight: bold;
+}
+
+.PostInfo__Location {
+  font-size: 11px;
+}
+
+.PostInfo__Content {
+  display: flex;
+  flex-direction: column;
+}
+
+.DotsIconSVG {
+  position: absolute;
+  right: 0;
+  margin-right: 12px;
+}
+
+/* CONTENT */
+.PostMain {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+
+.PostMain img {
+  object-fit: fill;
+  object-position: center;
+  scroll-snap-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* ACTIONS */
+.PostActions {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.PostActions__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

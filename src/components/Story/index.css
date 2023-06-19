@@ -1,0 +1,94 @@
+.Story {
+  position: relative;
+  width: 66px;
+}
+
+.Story__Username {
+  font-size: 12px;
+  text-align: center;
+  /* per gli username lunghi */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Story__Image {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  padding: 2px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+}
+
+.Story__Image::before {
+  content: "";
+  border-radius: 100%;
+  background-image: linear-gradient(
+    314.35deg,
+    #e20337 6.03%,
+    #c60188 40.88%,
+    #7700c3 73.23%
+  );
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  left: -2px;
+}
+
+.Story__Image::after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.Story__Image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.Story__Live {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 24px;
+  z-index: 1;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+      125.85deg,
+      #c90083 10.82%,
+      #d22463 29.29%,
+      #e10038 93.41%
+    ),
+    linear-gradient(0deg, #fefefe, #fefefe);
+  border-radius: 3px;
+  font-size: 10px;
+  border: 1.5px solid #ffffff;
+  text-align: center;
+  color: #ffffff;
+  padding: 3px 4px;
+}
+
+.Story__Username {
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  text-align: center;
+}
+
