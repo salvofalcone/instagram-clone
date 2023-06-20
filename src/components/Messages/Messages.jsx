@@ -1,15 +1,30 @@
 import "./index.css";
 
 import Message from "../Message";
-import { SearchIcon__Messages } from "../../icons";
+import SearchBar from "../SearchBar";
+
+import {
+  SearchIcon__Messages,
+  BackIcon__Messages,
+  AddIcon__Messages,
+  MoreInfoIcon__Messages,
+} from "../../icons";
 
 const Messages = ({ messages }) => {
   return (
     <div className="Messages">
       <div className="Messages__TopBar">
-        <span>{"<"}</span>
-        <span>nome utente</span>
-        <span>+</span>
+        <span>
+          <BackIcon__Messages />
+        </span>
+
+        <span className="Messages__TopBar__Name">
+          pippo <MoreInfoIcon__Messages />
+        </span>
+
+        <span>
+          <AddIcon__Messages />
+        </span>
       </div>
 
       <div className="Messages__SearchBar">

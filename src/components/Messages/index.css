@@ -1,6 +1,6 @@
-.Messages {
+/* .Messages {
   overflow-y: scroll;
-}
+} */
 
 /* TOP */
 .Messages__TopBar {
@@ -10,6 +10,10 @@
   margin: 0 15px;
 }
 
+.Messages__TopBar__Name {
+  font-size: 16px;
+}
+
 /* SEARCH */
 .Messages__SearchBar {
   display: flex;
@@ -17,6 +21,8 @@
   align-items: center;
   padding: 14px;
   position: relative;
+
+  z-index: 0;
 }
 
 .SearchIcon__Messages {
