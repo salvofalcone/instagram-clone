@@ -2,7 +2,6 @@ import "./index.css";
 import { Photo__Messages } from "../../icons";
 
 const Message = ({ message }) => {
-  console.log(message);
   return (
     <>
       <div className="Message">
