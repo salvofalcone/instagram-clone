@@ -10,12 +10,12 @@ import {
 
 import { useState } from "react";
 
-const Post = ({ post }) => {
+const Post = ({ post  }) => {
   const { isLike } = post;
   const [like, setLike] = useState(isLike);
 
   const onHandleLike = () => {
-    setLike(!like);
+    setLike(prev=> !prev);
   };
 
   return (

@@ -4,7 +4,7 @@ import {
   HomeIcon,
   SearchIcon,
   AddIcon,
-  LikeIcon,
+  LikeStandardIcon,
   ProfileIcon,
 } from "../../icons";
 
@@ -14,7 +14,7 @@ const BottomBar = () => {
       <HomeIcon />
       <SearchIcon />
       <AddIcon />
-      <LikeIcon />
+      <LikeStandardIcon />
       <ProfileIcon />
     </div>
   );

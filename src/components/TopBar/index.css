@@ -25,3 +25,9 @@
   align-items: center;
   gap: 18px;
 }
+
+.TopBar__Camera,
+.TopBar__Logo,
+.TopBar__Actions {
+  cursor: pointer;
+}

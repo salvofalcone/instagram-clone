@@ -8,6 +8,7 @@ import LogoIcon from "./LogoIcon";
 import HomeIcon from "./HomeIcon";
 import SearchIcon from "./SearchIcon";
 import AddIcon from "./AddIcon";
+import LikeStandardIcon from "./LikeStandardIcon";
 import LikeIcon from "./LikeIcon";
 import ProfileIcon from "./ProfileIcon";
 
@@ -26,6 +27,7 @@ export {
   SearchIcon,
   AddIcon,
   LikeIcon,
+  LikeStandardIcon,
   ProfileIcon,
   DotsIcon,
   CommentIcon,
