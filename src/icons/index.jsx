@@ -18,6 +18,10 @@ import CommentIcon from "./CommentIcon";
 import SendIcon from "./SendIcon";
 import BookMarkIcon from "./BookMarkIcon";
 
+/* MESSAGES */
+import SearchIcon__Messages from "./SearchIcon__Messages";
+import Photo__Messages from "./Photo__Messages";
+
 export {
   CameraIcon,
   IGTVIcon,
@@ -33,4 +37,6 @@ export {
   CommentIcon,
   SendIcon,
   BookMarkIcon,
+  SearchIcon__Messages,
+  Photo__Messages,
 };

@@ -1,0 +1,33 @@
+.Message {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  height: 72px;
+  width: 375px;
+}
+
+.Message__Image {
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+  margin: 4px 0 4px 12px;
+}
+
+.Message__Info {
+  margin-inline: 8px 18px;
+  width: 100%;
+}
+
+.Message__Info__bottom {
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+}
+
+.Message__IB__text {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
