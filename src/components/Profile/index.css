@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 348px;
+  margin-top: 18px;
 }
 
 .Profile__Top__Details {
@@ -41,9 +42,22 @@
 
 /* description */
 .Profile__Details {
-  margin-top: 8px;
+  margin-top: 18px;
   font-size: 13px;
 }
 .Profile__Details__Name {
   font-weight: bold;
+}
+
+/* button edit */
+.Profile__Edit {
+  margin-top: 18px;
+}
+
+.Profile__Edit__btn {
+  width: 343px;
+  height: 29px;
+  background-color: #ffffff;
+  border: 1px solid grey;
+  border-radius: 8px;
 }
