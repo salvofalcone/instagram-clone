@@ -1,6 +1,72 @@
+.Camera__Main {
+  height: 100%;
+}
+
 .Camera {
   position: relative;
   top: 6px;
-  width: 100vw;
-  height: calc(100vh - 66px);
+  width: 100%;
+  height: 100%;
+}
+
+.Camera__Filters__Container {
+  position: absolute;
+  bottom: 14%;
+  width: 100%;
+}
+
+.Camera__Filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  list-style-type: none;
+}
+
+.Camera__Filter__Preview {
+  border-radius: 100%;
+  width: 58px;
+  height: 58px;
+}
+
+.Camera__Filters li {
+  border-radius: 100%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Camera__Filter__Name {
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  padding: 2px 4px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+/* FILTRI */
+.claredon {
+  filter: contrast(1.2) saturate(1.35);
+  background-color: rgba(127, 187, 227, 0.2);
+  mix-blend-mode: overlay;
+}
+
+.sepia {
+  filter: sepia(1);
+}
+
+.moon {
+  background-color: #a0a0a0;
+  mix-blend-mode: soft-light;
+  filter: grayscale(1) contrast(1.1) brightness(1.1);
+}
+
+.lark {
+  background-color: #ffa200b3;
+  mix-blend-mode: color-dodge;
+  filter: contrast(0.6);
 }
