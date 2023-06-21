@@ -1,0 +1,49 @@
+.Profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TOP */
+.Profile__Top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 348px;
+}
+
+.Profile__Top__Details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Profile__image {
+  border-radius: 100%;
+  width: 86px;
+  height: 86px;
+}
+
+.Profile__Stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  text-align: center;
+}
+
+.Profile__top {
+  font-weight: bold;
+}
+
+.Profile__bottom {
+  font-size: 13px;
+}
+
+/* description */
+.Profile__Details {
+  margin-top: 8px;
+  font-size: 13px;
+}
+.Profile__Details__Name {
+  font-weight: bold;
+}

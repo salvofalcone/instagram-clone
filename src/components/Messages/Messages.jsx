@@ -4,17 +4,18 @@ import Message from "../Message";
 import SearchBar from "../SearchBar";
 
 import {
-  SearchIcon__Messages,
   BackIcon__Messages,
   AddIcon__Messages,
   MoreInfoIcon__Messages,
 } from "../../icons";
 
-const Messages = ({ messages }) => {
+const Messages = ({ messages, setSection }) => {
+  const onHandleClick = (sectionName) => setSection(sectionName);
+
   return (
     <div className="Messages">
       <div className="Messages__TopBar">
-        <span>
+        <span onClick={() => onHandleClick("home")}>
           <BackIcon__Messages />
         </span>
 
@@ -28,8 +29,7 @@ const Messages = ({ messages }) => {
       </div>
 
       <div className="Messages__SearchBar">
-        <SearchIcon__Messages />
-        <input type="search" id="searchBar" placeholder="Search" />
+        <SearchBar />
       </div>
 
       <ul className="Messages__Container">

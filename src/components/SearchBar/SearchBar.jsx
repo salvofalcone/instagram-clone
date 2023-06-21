@@ -1,3 +1,5 @@
+import "./index.css";
+
 import { SearchIcon__Messages } from "../../icons";
 
 const SearchBar = () => {

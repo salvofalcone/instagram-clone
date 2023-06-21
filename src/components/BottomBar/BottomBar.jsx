@@ -1,4 +1,4 @@
-import "./index.css"
+import "./index.css";
 
 import {
   HomeIcon,
@@ -8,14 +8,19 @@ import {
   ProfileIcon,
 } from "../../icons";
 
-const BottomBar = () => {
+const BottomBar = ({ setSection }) => {
+  const onHandleClick = (sectionName) => setSection(sectionName);
+
   return (
     <div className="BottomBar">
       <HomeIcon />
       <SearchIcon />
       <AddIcon />
       <LikeStandardIcon />
-      <ProfileIcon />
+
+      <div className="profileSection" onClick={() => onHandleClick("profile")}>
+        <ProfileIcon />
+      </div>
     </div>
   );
 };

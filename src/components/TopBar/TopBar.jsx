@@ -6,6 +6,7 @@ const TopBar = ({ setSection }) => {
 
   return (
     <div className="TopBar">
+
       <div className="TopBar__Camera" onClick={() => onHandleClick("camera")}>
         <CameraIcon />
       </div>
@@ -15,6 +16,7 @@ const TopBar = ({ setSection }) => {
       </div>
 
       <div className="TopBar__Actions">
+        
         <div
           className="TopBar__Actions__TV"
           onClick={() => onHandleClick("igtv")}>
@@ -26,7 +28,9 @@ const TopBar = ({ setSection }) => {
           onClick={() => onHandleClick("messanger")}>
           <MessangerIcon />
         </div>
+
       </div>
+      
     </div>
   );
 };

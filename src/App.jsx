@@ -9,6 +9,7 @@ import Stories from "./components/Stories";
 import Posts from "./components/Posts";
 import Camera from "./components/Camera";
 import Messages from "./components/Messages";
+import Profile from "./components/Profile";
 
 /* DATA */
 import { storiesData } from "./mocks/stories";
@@ -23,16 +24,23 @@ function App() {
   const [posts, setPosts] = useState(postsData);
   const [messages, setMessages] = useState(messagesData);
 
+  /* Fetch per user (proprietario profilo) */
+  useEffect(() => {
+    fetch("https://api.npoint.io/d92d246c972bb8b31ce7")
+      .then((res) => res.json())
+      .then((data) => setUser(data));
+  }, []);
+
   /* Fetch per posts */
   useEffect(() => {
-    fetch("https://api.npoint.io/627ee2d2c0096f6dcfbf")
+    fetch("https://api.npoint.io/79c365b5c6af193c95e6")
       .then((res) => res.json())
       .then((data) => setPosts(data));
   }, []);
 
   /* Fetch per stories */
   useEffect(() => {
-    fetch("https://api.npoint.io/e9976850174aa60dd7aa")
+    fetch("https://api.npoint.io/b994bff8b2ddc40175e9")
       .then((res) => res.json())
       .then((data) => setStories(data));
   }, []);
@@ -54,7 +62,6 @@ function App() {
             <Posts posts={posts} />
           </>
         );
-        break;
 
       case "camera":
         return (
@@ -62,7 +69,6 @@ function App() {
             <Camera />
           </>
         );
-        break;
 
       case "igtv":
         return (
@@ -70,15 +76,20 @@ function App() {
             <h3>Qui andranno le igtv</h3>
           </>
         );
-        break;
 
       case "messanger":
         return (
           <>
-            <Messages messages={messages} />
+            <Messages messages={messages} setSection={setSection} />
           </>
         );
-        break;
+
+      case "profile":
+        return (
+          <>
+            <Profile user={user} />
+          </>
+        );
 
       default:
         return (
@@ -87,15 +98,15 @@ function App() {
             <Posts posts={posts} />
           </>
         );
-        break;
     }
   };
 
+  /* QUELLO CHE VIENE SEMPRE RENDERIZZATO */
   return (
     <>
       <TopBar setSection={setSection} />
       {homeBySection()}
-      <BottomBar />
+      <BottomBar setSection={setSection} />
     </>
   );
 }
