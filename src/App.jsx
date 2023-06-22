@@ -28,7 +28,7 @@ function App() {
 
   const handleMessage = (message) => {
     setMessageChat(message);
-    console.log(message);
+    // console.log(message);
   };
 
   useEffect(() => {
