@@ -1,31 +1,25 @@
 import "./index.css";
 
-import Chat from "../Chat";
-
 import { Photo__Messages } from "../../icons";
 
-const Message = ({ message, setSection }) => {
+const Message = ({ message, setSection, handleMessage }) => {
   const onHandleClick = (sectionName) => setSection(sectionName);
 
-  const newChat = (message) => {
-    {
-      console.log(message);
-    }
-    {
-      /* <Chat chatData={message} /> */
-    }
+  const onHandleClickMessage = () => {
+    const messageChat = message;
+    handleMessage(messageChat);
   };
 
   return (
     <>
-      <div className="Message" onClick={() => newChat(message)}>
+      <div className="Message" onClick={() => onHandleClickMessage()}>
         <img
           src={message.userImage}
           alt="user profile image"
           className="Message__Image"
         />
 
-        <div className="Message__Info">
+        <div className="Message__Info" onClick={() => onHandleClick("chat")}>
           <p>{message.userName}</p>
 
           <div className="Message__Info__bottom">

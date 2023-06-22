@@ -8,6 +8,7 @@ const Stories = ({ user, stories }) => {
       <ul className="Stories__List">
         <li className="Stories__Item" key={99}>
           <Story story={user} key={99}/>
+          <p className="Stories__Yours">Your Story</p>
         </li>
 
         {stories &&

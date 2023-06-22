@@ -24,6 +24,12 @@ function App() {
   const [user, setUser] = useState(userData);
   const [posts, setPosts] = useState(postsData);
   const [messages, setMessages] = useState(messagesData);
+  const [messageChat, setMessageChat] = useState(null);
+
+  const handleMessage = (message) => {
+    setMessageChat(message);
+    console.log(message);
+  };
 
   useEffect(() => {
     /* dati proprietario progilp */
@@ -42,7 +48,7 @@ function App() {
       .then((data) => setStories(data));
 
     /* messages */
-    fetch("https://api.npoint.io/acddaa1116ddd222e8b3")
+    fetch("https://api.npoint.io/946961eb1c85e2a20c78")
       .then((res) => res.json())
       .then((data) => setMessages(data));
   }, []);
@@ -50,6 +56,7 @@ function App() {
   /* Creo una funzione per avere la home modulare alle sezioni */
   const homeBySection = () => {
     switch (section) {
+
       case "home":
         return (
           <>
@@ -80,7 +87,11 @@ function App() {
       case "messanger":
         return (
           <>
-            <Messages messages={messages} setSection={setSection} />
+            <Messages
+              messages={messages}
+              setSection={setSection}
+              handleMessage={handleMessage}
+            />
             <BottomBar setSection={setSection} />
           </>
         );
@@ -98,7 +109,7 @@ function App() {
         return (
           <>
             <TopBar setSection={setSection} />
-            <Chat />
+            <Chat messageChat={messageChat} />
             <BottomBar setSection={setSection} />
           </>
         );

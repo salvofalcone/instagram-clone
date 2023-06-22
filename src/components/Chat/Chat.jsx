@@ -1,12 +1,26 @@
 import "./index.css";
 
-// import {  } from "../../icons";
+const Chat = ({ messageChat }) => {
+  const changeClass = (plh) => {
+    {
+      if (plh === 0) {
+        return "mine";
+      } else {
+        return "not__mine";
+      }
+    }
+  };
 
-const Chat = ({ chatData }) => {
   return (
     <>
-      <div className="Chat">Sono una chat
-      <h3>{chatData.message}</h3>
+      <div className="Chat">
+        <p className="Chat__Username">{messageChat.userName}</p>
+
+        <div className="Chat__Messages">
+          {messageChat.chat.map((el) => (
+            <p className={changeClass(el.id)}>{el.message}</p>
+          ))}
+        </div>
       </div>
     </>
   );

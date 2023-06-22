@@ -9,7 +9,7 @@ import {
   MoreInfoIcon__Messages,
 } from "../../icons";
 
-const Messages = ({ messages, setSection }) => {
+const Messages = ({ messages, setSection, handleMessage }) => {
   const onHandleClick = (sectionName) => setSection(sectionName);
 
   return (
@@ -20,7 +20,7 @@ const Messages = ({ messages, setSection }) => {
         </span>
 
         <span className="Messages__TopBar__Name">
-          pippo <MoreInfoIcon__Messages />
+          pippogram <MoreInfoIcon__Messages />
         </span>
 
         <span>
@@ -35,7 +35,7 @@ const Messages = ({ messages, setSection }) => {
       <ul className="Messages__Container">
         {messages?.map((message) => (
           <li className="Message__Item" key={message.id}>
-            <Message message={message} setSection={setSection} />
+            <Message message={message} handleMessage={handleMessage} setSection={setSection}/>
           </li>
         ))}
       </ul>

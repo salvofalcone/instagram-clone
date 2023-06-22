@@ -1,7 +1,38 @@
+/* ! TUTTO DA SISTEMARE SECONDO MOCK FIGMA */
+
 .Chat {
-  border: 2px solid orange;
-  width: 200px;
-  height: 200px;
-  position: fixed;
-  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Chat__Username {
+  margin: 12px;
+  font-size: 24px;
+}
+
+.Chat__Messages {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 18px;
+}
+
+.mine,
+.not__mine {
+  width: 80%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.mine {
+  align-self: flex-end;
+  background-color: rgba(128, 128, 128, 0.4);
+  border-bottom-right-radius: 0;
+}
+
+.not__mine {
+  background-color: rgba(128, 128, 128, 0.1);
+  border-bottom-left-radius: 0;
 }

@@ -25,3 +25,8 @@
 .Stories__Item:last-child {
   padding-right: 12px;
 }
+
+
+.Stories__Yours{
+  font-size: 12px;
+}
