@@ -9,11 +9,15 @@ import {
 } from "../../icons";
 
 const BottomBar = ({ setSection }) => {
+
   const onHandleClick = (sectionName) => setSection(sectionName);
 
   return (
     <div className="BottomBar">
-      <HomeIcon />
+      <span onClick={() => onHandleClick("home")}>
+        <HomeIcon />
+      </span>
+
       <SearchIcon />
       <AddIcon />
       <LikeStandardIcon />

@@ -3,7 +3,6 @@ import "./index.css";
 const Profile = ({ user }) => {
   return (
     <div className="Profile">
-
       <div className="Profile__Top">
         <div className="Profile__Top__Details">
           <img
@@ -35,12 +34,9 @@ const Profile = ({ user }) => {
         <div className="Profile__Edit">
           <button className="Profile__Edit__btn">Edit Profile</button>
         </div>
-
       </div>
 
-      <div className="Profile__Feed">
-        video and photos
-      </div>
+      <div className="Profile__Feed">video and photos</div>
     </div>
   );
 };

@@ -35,7 +35,7 @@ const Messages = ({ messages, setSection }) => {
       <ul className="Messages__Container">
         {messages?.map((message) => (
           <li className="Message__Item" key={message.id}>
-            <Message message={message} />
+            <Message message={message} setSection={setSection} />
           </li>
         ))}
       </ul>

@@ -10,6 +10,7 @@ export const messagesData = [
       "È stato un onore far parte di Game of Thrones! Non dimenticherò mai le battaglie, l'intrigo e i draghi che abbiamo affrontato insieme.",
     date: "now",
   },
+
   {
     id: 2,
     userId: 2,
@@ -19,6 +20,7 @@ export const messagesData = [
       "Breaking Bad è stata un'esperienza indimenticabile. Mi sono trasformato da un insegnante di chimica a un signore della droga. Sono il pericolo!",
     date: "3m",
   },
+
   {
     id: 3,
     userId: 3,
@@ -28,6 +30,7 @@ export const messagesData = [
       "Stranger Things ha cambiato la mia vita. Ho scoperto i miei poteri sovrannaturali e ho combattuto contro il Male. Gli amici sono la mia famiglia.",
     date: "20m",
   },
+
   {
     id: 4,
     userId: 4,
@@ -37,6 +40,7 @@ export const messagesData = [
       "Elementary, caro Watson. Nessun mistero può resistere al mio acume. Sono il detective più brillante di tutti i tempi!",
     date: "1h",
   },
+
   {
     id: 5,
     userId: 5,
@@ -46,6 +50,7 @@ export const messagesData = [
       "Ho camminato attraverso il fuoco e ho conquistato i Sette Regni in Game of Thrones. I miei draghi sono il mio potere.",
     date: "1h",
   },
+
   {
     id: 6,
     userId: 6,
@@ -55,6 +60,7 @@ export const messagesData = [
       "La mia doppia vita da serial killer e analista forense è stata un viaggio oscuro. Non puoi sfuggire alla mia lama.",
     date: "5h",
   },
+
   {
     id: 7,
     userId: 7,
@@ -64,6 +70,7 @@ export const messagesData = [
       "Winter is coming! Ho difeso il Nord nella battaglia contro gli Estranei. Sono il vero erede del Trono di Spade.",
     date: "5h",
   },
+
   {
     id: 8,
     userId: 8,
@@ -73,6 +80,7 @@ export const messagesData = [
       "Amici è stata la mia famiglia. Il Central Perk è la mia seconda casa. Ero sempre lì per loro, e loro per me.",
     date: "7h",
   },
+
   {
     id: 9,
     userId: 9,
@@ -82,6 +90,7 @@ export const messagesData = [
       "The Office è il mio mondo. La Dunder Mifflin è il mio regno. La mia filosofia? I'm not superstitious, but I am a little stitious.",
     date: "12h",
   },
+
   {
     id: 10,
     userId: 10,
@@ -91,6 +100,7 @@ export const messagesData = [
       "Narcos è la mia storia. Sono il re del narcotraffico. Plata o plomo?",
     date: "12h",
   },
+
   {
     id: 11,
     userId: 11,
@@ -100,6 +110,7 @@ export const messagesData = [
       "Scandal è la mia specialità. Sono un'esperta in gestione delle crisi e ho il potere di manipolare la politica.",
     date: "18h",
   },
+
   {
     id: 12,
     userId: 12,
@@ -109,6 +120,7 @@ export const messagesData = [
       "La famiglia è tutto per me. Sono il capo della mafia di New Jersey. Non toccate mia moglie!",
     date: "18h",
   },
+
   {
     id: 13,
     userId: 13,
@@ -118,6 +130,7 @@ export const messagesData = [
       "Tredici è stato un numero maledetto nella mia vita. Le cassette sono la mia eredità, la mia storia di dolore e perdita.",
     date: "1d",
   },
+
   {
     id: 14,
     userId: 14,

@@ -1,6 +1,6 @@
-/* .Messages {
-  overflow-y: scroll;
-} */
+.Messages {
+  margin-top: 40px;
+}
 
 /* TOP */
 .Messages__TopBar {

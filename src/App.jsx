@@ -10,6 +10,7 @@ import Posts from "./components/Posts";
 import Camera from "./components/Camera";
 import Messages from "./components/Messages";
 import Profile from "./components/Profile";
+import Chat from "./components/Chat";
 
 /* DATA */
 import { storiesData } from "./mocks/stories";
@@ -52,45 +53,70 @@ function App() {
       case "home":
         return (
           <>
+            <TopBar setSection={setSection} />
             <Stories user={user} stories={stories} />
             <Posts posts={posts} />
+            <BottomBar setSection={setSection} />
           </>
         );
 
       case "camera":
-        return <Camera />;
+        return (
+          <>
+            <TopBar setSection={setSection} />
+            <Camera />
+          </>
+        );
 
       case "igtv":
         return (
           <>
-            <h3>Qui andranno le igtv</h3>
+            <TopBar setSection={setSection} />
+            <h3>igtv</h3>
+            <BottomBar setSection={setSection} />
           </>
         );
 
       case "messanger":
-        return <Messages messages={messages} setSection={setSection} />;
+        return (
+          <>
+            <Messages messages={messages} setSection={setSection} />
+            <BottomBar setSection={setSection} />
+          </>
+        );
 
       case "profile":
-        return <Profile user={user} />;
+        return (
+          <>
+            <h5>Aggiungere nome e menu</h5>
+            <Profile user={user} />
+            <BottomBar setSection={setSection} />
+          </>
+        );
+
+      case "chat":
+        return (
+          <>
+            <TopBar setSection={setSection} />
+            <Chat />
+            <BottomBar setSection={setSection} />
+          </>
+        );
 
       default:
         return (
           <>
+            <TopBar setSection={setSection} />
             <Stories user={user} stories={stories} />
             <Posts posts={posts} />
+            <BottomBar setSection={setSection} />
           </>
         );
     }
   };
 
   /* QUELLO CHE VIENE SEMPRE RENDERIZZATO */
-  return (
-    <>
-      <TopBar setSection={setSection} />
-      {homeBySection()}
-      <BottomBar setSection={setSection} />
-    </>
-  );
+  return <>{homeBySection()}</>;
 }
 
 export default App;
