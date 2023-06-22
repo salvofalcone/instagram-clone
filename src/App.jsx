@@ -24,29 +24,23 @@ function App() {
   const [posts, setPosts] = useState(postsData);
   const [messages, setMessages] = useState(messagesData);
 
-  /* Fetch per user (proprietario profilo) */
   useEffect(() => {
+    /* dati proprietario progilp */
     fetch("https://api.npoint.io/d92d246c972bb8b31ce7")
       .then((res) => res.json())
       .then((data) => setUser(data));
-  }, []);
 
-  /* Fetch per posts */
-  useEffect(() => {
+    /* posts */
     fetch("https://api.npoint.io/79c365b5c6af193c95e6")
       .then((res) => res.json())
       .then((data) => setPosts(data));
-  }, []);
 
-  /* Fetch per stories */
-  useEffect(() => {
+    /* stories */
     fetch("https://api.npoint.io/b994bff8b2ddc40175e9")
       .then((res) => res.json())
       .then((data) => setStories(data));
-  }, []);
 
-  /* Fetch per messages */
-  useEffect(() => {
+    /* messages */
     fetch("https://api.npoint.io/acddaa1116ddd222e8b3")
       .then((res) => res.json())
       .then((data) => setMessages(data));
@@ -64,11 +58,7 @@ function App() {
         );
 
       case "camera":
-        return (
-          <>
-            <Camera />
-          </>
-        );
+        return <Camera />;
 
       case "igtv":
         return (
@@ -78,18 +68,10 @@ function App() {
         );
 
       case "messanger":
-        return (
-          <>
-            <Messages messages={messages} setSection={setSection} />
-          </>
-        );
+        return <Messages messages={messages} setSection={setSection} />;
 
       case "profile":
-        return (
-          <>
-            <Profile user={user} />
-          </>
-        );
+        return <Profile user={user} />;
 
       default:
         return (
