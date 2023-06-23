@@ -1,8 +1,11 @@
 .BottomBar {
   position: fixed;
+  max-width: 390px;
+  margin: 0 auto;
   bottom: 0;
-  left: 0;
-  height: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 48px;
   width: 100%;
   display: flex;
   justify-content: space-around;

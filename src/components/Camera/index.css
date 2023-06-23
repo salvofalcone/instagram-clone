@@ -1,5 +1,6 @@
 .Camera__Main {
   height: 100%;
+  width: 100%;
 }
 
 .Camera {
@@ -12,7 +13,9 @@
 .Camera__Filters__Container {
   position: absolute;
   bottom: 14%;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
 }
 
 .Camera__Filters {

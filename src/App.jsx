@@ -128,3 +128,11 @@ function App() {
 }
 
 export default App;
+
+/*
+TODO
+
+- sistemare visualizzazione desktop
+- aggiungere sezione "esplora"
+- rimuovere sezione igtv
+*/
