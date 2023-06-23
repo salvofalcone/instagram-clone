@@ -1,13 +1,15 @@
 .Modal {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100vw;
+  max-width: 390px;
   height: 100vh;
+  max-height: 844px;
   z-index: 909;
   opacity: 0;
   visibility: hidden;
-
   background: rgba(255, 255, 255, 0.49);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9px);
