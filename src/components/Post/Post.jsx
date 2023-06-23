@@ -1,3 +1,11 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useState } from "react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+import { Pagination } from "swiper";
+
 import "./index.css";
 
 import {
@@ -8,14 +16,12 @@ import {
   BookMarkIcon,
 } from "../../icons";
 
-import { useState } from "react";
-
-const Post = ({ post  }) => {
+const Post = ({ post }) => {
   const { isLike } = post;
   const [like, setLike] = useState(isLike);
 
   const onHandleLike = () => {
-    setLike(prev=> !prev);
+    setLike((prev) => !prev);
   };
 
   return (
@@ -40,10 +46,30 @@ const Post = ({ post  }) => {
 
       {/* contenuto post */}
       <div className="PostMain">
+      <Swiper
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper">
         {post?.media?.map((media) => (
-          <img src={media?.src} alt="Post image" key={media.id}></img>
+          <SwiperSlide>
+            {media?.type === "image" ? (
+              <img src={media?.src} alt="Post image" key={media.id}></img>
+            ) : (
+              <video
+                src={media?.src}
+                alt="Post video"
+                key={media.id}
+                playsInline
+                muted
+                autoPlay
+                loop></video>
+            )}
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
+        </div>
 
       {/* actions */}
       <div className="PostActions">

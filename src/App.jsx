@@ -28,7 +28,6 @@ function App() {
 
   const handleMessage = (message) => {
     setMessageChat(message);
-    // console.log(message);
   };
 
   useEffect(() => {
@@ -56,7 +55,6 @@ function App() {
   /* Creo una funzione per avere la home modulare alle sezioni */
   const homeBySection = () => {
     switch (section) {
-
       case "home":
         return (
           <>
@@ -79,7 +77,7 @@ function App() {
         return (
           <>
             <TopBar setSection={setSection} />
-            <h3>igtv</h3>
+            <h3>Not Available</h3>
             <BottomBar setSection={setSection} />
           </>
         );
@@ -99,7 +97,6 @@ function App() {
       case "profile":
         return (
           <>
-            <h5>Aggiungere nome e menu</h5>
             <Profile user={user} />
             <BottomBar setSection={setSection} />
           </>

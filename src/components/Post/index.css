@@ -39,22 +39,20 @@
 
 /* CONTENT */
 .PostMain {
-  display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   width: 100%;
-}
-
-.PostMain::-webkit-scrollbar {
-  display: none;
+  height: 300px;
 }
 
 .PostMain img {
-  object-fit: fill;
-  object-position: center;
-  scroll-snap-align: center;
+  object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 300px;
+}
+
+.PostMain video {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
 }
 
 /* ACTIONS */

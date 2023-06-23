@@ -1,0 +1,99 @@
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 909;
+  opacity: 0;
+  visibility: hidden;
+
+  background: rgba(255, 255, 255, 0.49);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+.Modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Modal__Close {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-size: 18px;
+  color: #ffffff;
+  text-shadow: #000000 1px 0 10px;
+}
+
+.Modal__User {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 2;
+  text-shadow: #000000 1px 0 10px;
+}
+
+.Modal .swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.Modal img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.Modal video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.Modal__User {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.Modal__User__Image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #f7f7f7;
+}
+
+.Modal__User__Image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.Modal .swiper-pagination {
+  top: 5px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.Modal .swiper-pagination-progressbar-fill {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: #000000 1px 0 10px;
+}

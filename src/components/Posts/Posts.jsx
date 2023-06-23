@@ -1,6 +1,6 @@
-import "./index.css";
-
 import Post from "../Post";
+
+import "./index.css";
 
 const Posts = ({ posts }) => {
   return (
